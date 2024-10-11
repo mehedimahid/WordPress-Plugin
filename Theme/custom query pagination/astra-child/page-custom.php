@@ -15,7 +15,7 @@ get_header();
             "orderby"  =>"post__in",//je vabe post id dibe se vabe rakhte chaile
             "paged"    =>$paged
     ));
-    foreach ($_p as $post) {
+    foreach ($_p as $post) {// setup_postdata() use korle must $post name variable declare korte hbe
         setup_postdata($post);
         ?>
         <h2><a href="<?php the_permalink();?>"><?php the_title()?></a></h2>

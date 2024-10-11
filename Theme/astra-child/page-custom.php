@@ -10,7 +10,7 @@ get_header();
             "post__in"=>array(171,173,87),
         "orderby"=>"post__in",//je vabe post id dibe se vabe rakhte chaile
     ));
-    foreach ($_p as $post) {
+    foreach ($_p as $post) {// setup_postdata() use korle must $post name variable declare korte hbe
         setup_postdata($post);
         ?>
         <h2><a href="<?php the_permalink();?>"><?php the_title()?></a></h2>
