@@ -1,0 +1,11 @@
+.dw-section {
+    float:  left;
+    margin: 0 5% 0 0;
+    box-sizing: border-box;
+}
+
+.dw-col-2  { width: 47.5%; }
+.dw-col-3  { width: 30%;   }
+
+.dw-col-2:nth-child( 2n ),
+.dw-col-3:nth-child( 3n ) { margin-left: 0; margin-right: 0; }
