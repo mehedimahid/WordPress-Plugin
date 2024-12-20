@@ -20,8 +20,8 @@ class DBDUsers extends WP_List_Table {
 		return "<input type='checkbox' value='{$item['id']}' />";
 	}
 	function column_action( $item ) {
-		//wp_nonce_url dile seser 2ti extra parameter dite hobe
 		//URL verified  1st step set action and name like dbd_edit and nn(nn url a show korbe)
+		//
 		$link = wp_nonce_url(admin_url("?page=dbd-demo&pid=").$item['id'],'dbd_edit','nn');
 		return "<a href='{$link}'>Edit</a>";
 	}

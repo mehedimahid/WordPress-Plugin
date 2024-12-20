@@ -175,7 +175,7 @@ add_action('admin_post_dbd_add_record', function () {
 
 	// নন্স যাচাই
 	if (!isset($_POST['dbd_nonce']) || !wp_verify_nonce($_POST['dbd_nonce'], 'dbd_demo')) {
-		wp_die('অননুমোদিত অনুরোধ।');
+		wp_die('you are not do this');
 	}
 
 	if (isset($_POST['name'], $_POST['email'])) {
@@ -203,7 +203,8 @@ add_action('admin_post_dbd_add_record', function () {
 				['%s', '%s']
 			);
             $new_id = $wpdb->insert_id;
-			wp_redirect(admin_url('admin.php?page=dbd-demo&pid=' . $new_id));
+			$nonce = wp_create_nonce('dbd_edit');
+			wp_redirect(admin_url('admin.php?page=dbd-demo&pid=' . $new_id."&nn={$nonce}"));
 
 //			wp_redirect(admin_url('admin.php?page=dbd-demo'));
 		}
