@@ -1,0 +1,23 @@
+body{
+    background-color: gray !important;
+}
+.simple-contact-form{
+    background-color: white;
+    border-radius: 5px;
+    max-width: 500px;
+    padding: 25px;
+    margin: 30px auto;
+
+}
+.form-group{
+    margin-bottom: 10px;
+}
+.form-control{
+    padding: 12px 20px;
+    width: 100%;
+    border-radius: 5px !important;
+    box-sizing: border-box !important;
+}
+.btn{
+    width: 100%;
+}

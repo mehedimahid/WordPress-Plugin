@@ -1,1 +1,1 @@
-error_log( print_r( $varriable , true) . "\n\n", 3, __DIR__ . '/log.txt' );
+error_log( print_r( $varriableName , true) . "\n\n", 3, __DIR__ . '/log.txt' );
