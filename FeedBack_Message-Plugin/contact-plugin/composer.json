@@ -1,0 +1,17 @@
+{
+    "name": "user/contact-plugin",
+    "autoload": {
+        "psr-4": {
+            "CONTACTPLUGIN": "contact-plugin.php"
+        }
+    },
+    "authors": [
+        {
+            "name": "mehedimahid",
+            "email": "53916831+mehedimahid@users.noreply.github.com"
+        }
+    ],
+    "require": {
+        "htmlburger/carbon-fields": "^3.6"
+    }
+}
